@@ -8,6 +8,7 @@
 class PathController {
  public:
   PathController() : nh{} {
+    // Setup publisher / subscribers
     cmd_vel_pub = nh.advertise<geometry_msgs::Twist>("cmd_vel", 10);
     current_pose_pub = nh.advertise<geometry_msgs::Pose2D>("current_pose", 10);
     leftSub = nh.subscribe<std_msgs::Float32>(
@@ -26,8 +27,12 @@ class PathController {
         });
 
     last_time = ros::Time::now();
-    nh.param("l", l, 0.18);
-    nh.param("r", r, 0.05);
+
+    // Setup robot constant params
+    nh.param("l", l, 0.18); // Wheel base
+    nh.param("r", r, 0.05); // Wheel Radius
+
+    // Controller constants
     nh.param("max_u", max_u, 0.6);
     nh.param("max_r", max_r, 1.25);
     nh.param("k_u", k_u, 0.25);
@@ -52,20 +57,23 @@ class PathController {
   }
 
   double wrapAngle(double angle) {
+    // Wraps an angle to [-pi, pi]
     return std::atan2(std::sin(angle), std::cos(angle));
   }
 
   void updateEstimates(double dt) {
     double delta_u, delta_psi;
+    // Closed loop -> Updates positions based on left and right wheel measurements
     if (closedLoop) {
       delta_u = r * (leftWheel + rightWheel) / 2.0 * dt;
       delta_psi = r * (leftWheel - rightWheel) / l * dt;
     } else {
+      // Open loop -> Updates estimated position based on setpoints
       delta_u = last_u * dt;
       delta_psi = last_r * dt;
     }
-    epsi += delta_psi;
 
+    epsi += delta_psi;
     ex += std::cos(epsi) * delta_u;
 
     auto pose = geometry_msgs::Pose2D();
@@ -79,10 +87,13 @@ class PathController {
 
     updateEstimates(0.01);
 
+    // Compute error distance and angle to target
     double error_x = target_x - ex;
     double error_y = target_y - ey;
     double distance = std::hypot(error_x, error_y);
     double angle = wrapAngle(std::atan2(error_y, error_x) - epsi);
+
+    // Compute velocities with proportional control
     double u = distance * std::cos(angle) * k_u + dist_integral * ki_u;
     double r = -angle * k_r - angle_integral * ki_r;
     ROS_INFO("%f %f", -angle * k_r, angle_integral * ki_u);
