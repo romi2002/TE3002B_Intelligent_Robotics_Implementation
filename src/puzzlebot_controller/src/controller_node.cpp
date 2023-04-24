@@ -8,7 +8,8 @@ class PathController {
 public:
     PathController() :
         nh{}{
-        cmd_vel_pub = nh.advertise<geometry_msgs::Twist>("cmd_vel", 100);
+        cmd_vel_pub = nh.advertise<geometry_msgs::Twist>("cmd_vel", 10);
+        current_pose_pub = nh.advertise<geometry_msgs::Pose2D>("current_pose", 10);
         leftSub = nh.subscribe<std_msgs::Float32>("wl", 10, [this](const std_msgs::Float32ConstPtr &msg){
             this->leftWheel = msg->data;
         });
@@ -24,10 +25,10 @@ public:
         last_time = ros::Time::now();
         nh.param("l", l, 0.18);
         nh.param("r", r, 0.05);
-        nh.param("max_u", max_u, 0.5);
-        nh.param("max_r", max_r, 1.0);
+        nh.param("max_u", max_u, 0.6);
+        nh.param("max_r", max_r, 1.25);
         nh.param("k_u", k_u, 0.25);
-        nh.param("k_r", k_r, 2.0);
+        nh.param("k_r", k_r, 0.85);
 
         timer = nh.createTimer(ros::Duration(0.01), &PathController::update, this);
         timer.start();
@@ -63,6 +64,11 @@ protected:
 
         ex += std::cos(epsi) * delta_u;
         ey += std::sin(epsi) * delta_u;
+
+        auto pose = geometry_msgs::Pose2D();
+        pose.x = ex;
+        pose.y = ey;
+        current_pose_pub.publish(pose);
     }
 
     void update(const ros::TimerEvent &e){
@@ -74,21 +80,26 @@ protected:
         double error_y = target_y - ey;
         double distance = std::hypot(error_x, error_y);
         double angle = wrapAngle(std::atan2(error_y, error_x) - epsi);
-        double u = distance * std::cos(angle) * k_u;
-        double r = -angle * k_r;
-        ROS_INFO("%f, %f %f %f", ex, ey, leftWheel, rightWheel);
+        double u = distance * std::cos(angle) * k_u + dist_integral * ki_u;
+        double r = -angle * k_r - angle_integral * ki_r;
+        ROS_INFO("%f %f", -angle * k_r, angle_integral * ki_u);
 
         // Stop when close
-        if(distance > 0.1){
-            sendVelocity(u, r);
-        } else {
-            sendVelocity(0, 0);
+        if(distance < 0.1){
+            u = 0;
+            r = 0;
         }
+        
+        dist_integral += distance * std::cos(angle) * dt;
+        angle_integral += angle * dt;
+        sendVelocity(u, r);
+
         last_time = ros::Time::now();
     }
 private:
     ros::NodeHandle nh;
     ros::Publisher cmd_vel_pub;
+    ros::Publisher current_pose_pub;
     ros::Subscriber leftSub, rightSub;
     ros::Subscriber targetSub;
     ros::Timer timer;
@@ -102,7 +113,11 @@ private:
     // TODO make these params
     double l{1}, r{1};
     double max_u{1}, max_r{1};
+
     double k_u{1}, k_r{1};
+    double ki_u{0.0}, ki_r{0.0};
+
+    double dist_integral{0}, angle_integral{0};
 
     double target_x{0}, target_y{0};
     bool closedLoop{true};
