@@ -70,11 +70,13 @@ class PathController {
     } else {
       // Open loop -> Updates estimated position based on setpoints
       delta_u = last_u * dt;
-      delta_psi = last_r * dt;
+      delta_psi = -last_r * dt;
     }
 
     epsi += delta_psi;
+    epsi = wrapAngle(epsi);
     ex += std::cos(epsi) * delta_u;
+    ey += std::sin(epsi) * delta_u;
 
     auto pose = geometry_msgs::Pose2D();
     pose.x = ex;
@@ -96,7 +98,7 @@ class PathController {
     // Compute velocities with proportional control
     double u = distance * std::cos(angle) * k_u + dist_integral * ki_u;
     double r = -angle * k_r - angle_integral * ki_r;
-    ROS_INFO("%f %f", -angle * k_r, angle_integral * ki_u);
+    ROS_INFO("%f %f", ex, ey);
 
     // Stop when close
     if (distance < 0.1) {
