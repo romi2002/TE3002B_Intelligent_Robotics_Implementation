@@ -161,6 +161,7 @@ target_link_libraries(${PROJECT_NAME}_controller_node
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
+   scripts/line_follower.py
    scripts/target_generator.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
@@ -187,11 +188,11 @@ install(TARGETS ${PROJECT_NAME}_controller_node
 # )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
+install(FILES
 #   # myfile1
 #   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 
 #############
 ## Testing ##
