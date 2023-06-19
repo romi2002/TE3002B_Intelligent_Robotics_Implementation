@@ -1,0 +1,4 @@
+Symlinking /home/puzzlebot/ws/devel/lib/pkgconfig/puzzlebot-odom.pc
+Symlinking /home/puzzlebot/ws/devel/lib/puzzlebot-odom/puzzlebot-odom_odometry_node
+Symlinking /home/puzzlebot/ws/devel/share/puzzlebot-odom/cmake/puzzlebot-odomConfig-version.cmake
+Symlinking /home/puzzlebot/ws/devel/share/puzzlebot-odom/cmake/puzzlebot-odomConfig.cmake

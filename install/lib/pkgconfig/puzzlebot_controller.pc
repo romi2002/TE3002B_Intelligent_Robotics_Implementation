@@ -1,0 +1,8 @@
+prefix=/home/puzzlebot/ws/install
+
+Name: puzzlebot_controller
+Description: Description of puzzlebot_controller
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpuzzlebot_controller
+Requires: geometry_msgs roscpp rospy std_msgs actionlib

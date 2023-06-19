@@ -1,0 +1,8 @@
+prefix=/home/puzzlebot/ws/install
+
+Name: puzzlebot-odom
+Description: Description of puzzlebot-odom
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

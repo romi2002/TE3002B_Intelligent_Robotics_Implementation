@@ -1,0 +1,29 @@
+[  4%] Built target puzzlebot_controller_controller_node
+[  7%] [32mBuilding CXX object CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionFeedback
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveResult
+[35m[1mScanning dependencies of target _puzzlebot_controller_generate_messages_check_deps_MoveActionGoal[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionGoal
+[35m[1mScanning dependencies of target _puzzlebot_controller_generate_messages_check_deps_MoveAction[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveAction
+[35m[1mScanning dependencies of target _puzzlebot_controller_generate_messages_check_deps_MoveFeedback[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveFeedback
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[  7%] Built target geometry_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_lisp[0m
+[  7%] Built target actionlib_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target _puzzlebot_controller_generate_messages_check_deps_MoveActionResult[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionResult
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kinclude/MoveAction.h: No such file or directory
+ #include [01;31m[K"include/MoveAction.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[35m[1mScanning dependencies of target _puzzlebot_controller_generate_messages_check_deps_MoveGoal[0m
+CMakeFiles/puzzlebot_controller_state_machine_node.dir/build.make:62: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o' failed
+make[2]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o] Error 1
+CMakeFiles/Makefile2:592: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/all' failed
+make[1]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveGoal
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

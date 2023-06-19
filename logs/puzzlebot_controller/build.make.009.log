@@ -1,0 +1,49 @@
+[35m[1mScanning dependencies of target puzzlebot_controller_state_machine_node[0m
+[  4%] Built target puzzlebot_controller_controller_node
+[  7%] [32mBuilding CXX object CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveResult
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionFeedback
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionGoal
+[  7%] Built target geometry_msgs_generate_messages_lisp
+[  7%] Built target actionlib_msgs_generate_messages_lisp
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveAction
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveFeedback
+[  7%] Built target geometry_msgs_generate_messages_py
+[  7%] Built target actionlib_msgs_generate_messages_py
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionResult
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveGoal
+[  7%] Built target actionlib_msgs_generate_messages_nodejs
+[  7%] Built target geometry_msgs_generate_messages_nodejs
+[  7%] Built target geometry_msgs_generate_messages_eus
+[  7%] Built target actionlib_msgs_generate_messages_eus
+[  7%] Built target geometry_msgs_generate_messages_cpp
+[  7%] Built target actionlib_msgs_generate_messages_cpp
+[ 24%] Built target puzzlebot_controller_generate_messages_lisp
+[ 43%] Built target puzzlebot_controller_generate_messages_py
+[ 60%] Built target puzzlebot_controller_generate_messages_nodejs
+[ 80%] Built target puzzlebot_controller_generate_messages_eus
+[ 97%] Built target puzzlebot_controller_generate_messages_cpp
+[ 97%] Built target puzzlebot_controller_generate_messages
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:1[m[K:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::mainLoop(const ros::TimerEvent&)[m[K’:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[KStateMachineState[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:58:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+     [01;36m[KR[m[KOS_INFO("%d", state);
+     [01;36m[K^[m[K
+[100%] [32m[1mLinking CXX executable /home/puzzlebot/ws/devel/.private/puzzlebot_controller/lib/puzzlebot_controller/state_machine_node[0m
+[100%] Built target puzzlebot_controller_state_machine_node

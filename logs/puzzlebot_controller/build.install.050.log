@@ -1,0 +1,124 @@
+[  5%] Built target puzzlebot_controller_controller_node
+[  5%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveGoal
+[  5%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveResult
+[  5%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveFeedback
+[  5%] Built target geometry_msgs_generate_messages_lisp
+[  5%] Built target actionlib_msgs_generate_messages_lisp
+[  5%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionGoal
+[  5%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveAction
+[  5%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionResult
+[  5%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionFeedback
+[ 23%] Built target puzzlebot_controller_generate_messages_lisp
+[ 23%] Built target geometry_msgs_generate_messages_py
+[ 23%] Built target actionlib_msgs_generate_messages_py
+[ 43%] Built target puzzlebot_controller_generate_messages_py
+[ 43%] Built target actionlib_msgs_generate_messages_nodejs
+[ 43%] Built target geometry_msgs_generate_messages_nodejs
+[ 61%] Built target puzzlebot_controller_generate_messages_nodejs
+[ 61%] Built target geometry_msgs_generate_messages_eus
+[ 61%] Built target actionlib_msgs_generate_messages_eus
+[ 82%] Built target puzzlebot_controller_generate_messages_eus
+[ 82%] Built target geometry_msgs_generate_messages_cpp
+[ 82%] Built target actionlib_msgs_generate_messages_cpp
+[100%] Built target puzzlebot_controller_generate_messages_cpp
+[100%] Built target puzzlebot_controller_generate_messages
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/puzzlebot/ws/install/_setup_util.py
+-- Up-to-date: /home/puzzlebot/ws/install/env.sh
+-- Up-to-date: /home/puzzlebot/ws/install/setup.bash
+-- Up-to-date: /home/puzzlebot/ws/install/local_setup.bash
+-- Up-to-date: /home/puzzlebot/ws/install/setup.sh
+-- Up-to-date: /home/puzzlebot/ws/install/local_setup.sh
+-- Up-to-date: /home/puzzlebot/ws/install/setup.zsh
+-- Up-to-date: /home/puzzlebot/ws/install/local_setup.zsh
+-- Up-to-date: /home/puzzlebot/ws/install/.rosinstall
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/action/Move.action
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/msg/MoveAction.msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/msg/MoveActionGoal.msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/msg/MoveActionResult.msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/msg/MoveActionFeedback.msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/msg/MoveGoal.msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/msg/MoveResult.msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/msg/MoveFeedback.msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/cmake/puzzlebot_controller-msg-paths.cmake
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller/MoveActionResult.h
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller/MoveGoal.h
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller/MoveActionGoal.h
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller/MoveAction.h
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller/MoveResult.h
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller/MoveFeedback.h
+-- Up-to-date: /home/puzzlebot/ws/install/include/puzzlebot_controller/MoveActionFeedback.h
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/manifest.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg/MoveActionFeedback.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg/MoveActionGoal.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg/MoveGoal.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg/MoveFeedback.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg/MoveActionResult.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg/MoveAction.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/roseus/ros/puzzlebot_controller/msg/MoveResult.l
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package_MoveResult.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/MoveFeedback.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/puzzlebot_controller-msg.asd
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package_MoveFeedback.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package_MoveActionFeedback.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package_MoveActionGoal.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/MoveActionResult.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package_MoveGoal.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/MoveActionFeedback.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/MoveAction.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package_MoveAction.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/MoveResult.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/_package_MoveActionResult.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/MoveGoal.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/common-lisp/ros/puzzlebot_controller/msg/MoveActionGoal.lisp
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/_index.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/MoveActionGoal.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/MoveAction.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/MoveGoal.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/MoveActionFeedback.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/MoveActionResult.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/MoveFeedback.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/_index.js
+-- Up-to-date: /home/puzzlebot/ws/install/share/gennodejs/ros/puzzlebot_controller/msg/MoveResult.js
+Listing '/home/puzzlebot/ws/devel/.private/puzzlebot_controller/lib/python3/dist-packages/puzzlebot_controller'...
+Listing '/home/puzzlebot/ws/devel/.private/puzzlebot_controller/lib/python3/dist-packages/puzzlebot_controller/msg'...
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/__pycache__
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/__pycache__/__init__.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/__init__.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/_MoveAction.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/_MoveResult.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/_MoveActionGoal.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/_MoveFeedback.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/_MoveActionResult.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/_MoveActionGoal.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/_MoveActionFeedback.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/_MoveFeedback.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/_MoveResult.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/_MoveGoal.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/_MoveAction.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__pycache__/__init__.cpython-36.pyc
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/__init__.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/_MoveGoal.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/_MoveActionResult.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/python3/dist-packages/puzzlebot_controller/msg/_MoveActionFeedback.py
+-- Installing: /home/puzzlebot/ws/install/lib/pkgconfig/puzzlebot_controller.pc
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/cmake/puzzlebot_controller-msg-extras.cmake
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/cmake/puzzlebot_controllerConfig.cmake
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/cmake/puzzlebot_controllerConfig-version.cmake
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot_controller/package.xml
+-- Installing: /home/puzzlebot/ws/install/lib/puzzlebot_controller/line_follower.py
+-- Installing: /home/puzzlebot/ws/install/lib/puzzlebot_controller/target_generator.py
+-- Installing: /home/puzzlebot/ws/install/lib/puzzlebot_controller/move_action_server.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/puzzlebot_controller/controller_node

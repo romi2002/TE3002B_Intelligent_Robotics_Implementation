@@ -1,0 +1,111 @@
+[35m[1mScanning dependencies of target puzzlebot_controller_state_machine_node[0m
+[  4%] Built target puzzlebot_controller_controller_node
+[  7%] [32mBuilding CXX object CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveResult
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveGoal
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveFeedback
+[  7%] Built target geometry_msgs_generate_messages_lisp
+[  7%] Built target actionlib_msgs_generate_messages_lisp
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionGoal
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveAction
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionResult
+[  7%] Built target actionlib_msgs_generate_messages_py
+[  7%] Built target geometry_msgs_generate_messages_py
+[  7%] Built target actionlib_msgs_generate_messages_nodejs
+[  7%] Built target geometry_msgs_generate_messages_nodejs
+[  7%] Built target actionlib_msgs_generate_messages_eus
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionFeedback
+[  7%] Built target geometry_msgs_generate_messages_eus
+[  7%] Built target geometry_msgs_generate_messages_cpp
+[  7%] Built target actionlib_msgs_generate_messages_cpp
+[ 24%] Built target puzzlebot_controller_generate_messages_lisp
+[ 56%] Built target puzzlebot_controller_generate_messages_nodejs
+[ 60%] Built target puzzlebot_controller_generate_messages_py
+[ 80%] Built target puzzlebot_controller_generate_messages_eus
+[ 97%] Built target puzzlebot_controller_generate_messages_cpp
+[ 97%] Built target puzzlebot_controller_generate_messages
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K In constructor ‘[01m[KStateMachine::StateMachine()[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:31:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStateMachine[m[K’ does not have any field named ‘[01m[Klast_time_[m[K’
+       [01;31m[Klast_time_[m[K{ros::Time::now()} {
+       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::mainLoop(const ros::TimerEvent&)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:72:40:[m[K [01;31m[Kerror: [m[K‘[01m[KLeft[m[K’ is not a member of ‘[01m[KStateMachineState[m[K’
+             state = StateMachineState::[01;31m[KLeft[m[K;
+                                        [01;31m[K^~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:76:40:[m[K [01;31m[Kerror: [m[K‘[01m[KRight[m[K’ is not a member of ‘[01m[KStateMachineState[m[K’
+             state = StateMachineState::[01;31m[KRight[m[K;
+                                        [01;31m[K^~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:82:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ros::Duration[m[K’ has no member named ‘[01m[Kto_sec[m[K’; did you mean ‘[01m[KtoSec[m[K’?
+     if((ros::Time::now() - construction_detected_time).[01;31m[Kto_sec[m[K() < 5 || traffic_light_ == "Yellow"){
+                                                        [01;31m[K^~~~~~[m[K
+                                                        [32m[KtoSec[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:108:43:[m[K [01;31m[Kerror: [m[K‘[01m[KLeft[m[K’ is not a member of ‘[01m[KStateMachineState[m[K’
+     } else if(state == StateMachineState::[01;31m[KLeft[m[K){
+                                           [01;31m[K^~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:111:43:[m[K [01;31m[Kerror: [m[K‘[01m[KRight[m[K’ is not a member of ‘[01m[KStateMachineState[m[K’
+     } else if(state == StateMachineState::[01;31m[KRight[m[K){
+                                           [01;31m[K^~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::move_and_turn(double, double)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveActionGoal[m[K’ was not declared in this scope
+     [01;31m[KMoveActionGoal[m[K action;
+     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:130:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/puzzlebot/ws/devel/.private/puzzlebot_controller/include/puzzlebot_controller/MoveAction.h:18:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:11[m[K:
+[01m[K/home/puzzlebot/ws/devel/.private/puzzlebot_controller/include/puzzlebot_controller/MoveActionGoal.h:61:72:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpuzzlebot_controller::MoveActionGoal[m[K’
+ typedef ::puzzlebot_controller::MoveActionGoal_<std::allocator<void> > [01;36m[KMoveActionGoal[m[K;
+                                                                        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:131:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction[m[K’ was not declared in this scope
+     [01;31m[Kaction[m[K.goal.x = dist;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:131:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kctime[m[K’
+     [01;36m[Kaction[m[K.goal.x = dist;
+     [01;36m[K^~~~~~[m[K
+     [32m[Kctime[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:133:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kac[m[K’ was not declared in this scope
+     [01;31m[Kac[m[K.sendGoal(action);
+     [01;31m[K^~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:133:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kac_[m[K’
+     [01;36m[Kac[m[K.sendGoal(action);
+     [01;36m[K^~[m[K
+     [32m[Kac_[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:136:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kaction[m[K’
+     [01;31m[Kaction[m[K.goal.x = 0.0;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:141:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kaction[m[K’
+     MoveActionGoal [01;31m[Kaction[m[K;
+                    [01;31m[K^~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::forward(double)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:151:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveActionGoal[m[K’ was not declared in this scope
+     [01;31m[KMoveActionGoal[m[K action;
+     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:151:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/puzzlebot/ws/devel/.private/puzzlebot_controller/include/puzzlebot_controller/MoveAction.h:18:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:11[m[K:
+[01m[K/home/puzzlebot/ws/devel/.private/puzzlebot_controller/include/puzzlebot_controller/MoveActionGoal.h:61:72:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpuzzlebot_controller::MoveActionGoal[m[K’
+ typedef ::puzzlebot_controller::MoveActionGoal_<std::allocator<void> > [01;36m[KMoveActionGoal[m[K;
+                                                                        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:152:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction[m[K’ was not declared in this scope
+     [01;31m[Kaction[m[K.goal.x = dist;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:152:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kctime[m[K’
+     [01;36m[Kaction[m[K.goal.x = dist;
+     [01;36m[K^~~~~~[m[K
+     [32m[Kctime[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:154:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kac[m[K’ was not declared in this scope
+     [01;31m[Kac[m[K.sendGoal(action);
+     [01;31m[K^~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:154:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kac_[m[K’
+     [01;36m[Kac[m[K.sendGoal(action);
+     [01;36m[K^~[m[K
+     [32m[Kac_[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K At global scope:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:180:2:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+ }[01;31m[K;[m[K
+  [01;31m[K^[m[K
+CMakeFiles/puzzlebot_controller_state_machine_node.dir/build.make:62: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o' failed
+make[2]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o] Error 1
+CMakeFiles/Makefile2:592: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/all' failed
+make[1]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

@@ -1,0 +1,8 @@
+[01m[K/home/puzzlebot/ws/src/puzzlebot_utils/src/kinematic_characterization_node.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kpuzzlebot_sim/ResetPosition.h: No such file or directory
+ #include [01;31m[K"puzzlebot_sim/ResetPosition.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/kinematic_characterization_node.dir/src/kinematic_characterization_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinematic_characterization_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

@@ -1,0 +1,4 @@
+Symlinking /home/puzzlebot/ws/devel/lib/pkgconfig/puzzlebot_control.pc
+Symlinking /home/puzzlebot/ws/devel/lib/puzzlebot_control/puzzlebot_control_node
+Symlinking /home/puzzlebot/ws/devel/share/puzzlebot_control/cmake/puzzlebot_controlConfig-version.cmake
+Symlinking /home/puzzlebot/ws/devel/share/puzzlebot_control/cmake/puzzlebot_controlConfig.cmake

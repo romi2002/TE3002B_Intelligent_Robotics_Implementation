@@ -1,0 +1,8 @@
+prefix=/home/puzzlebot/ws/install
+
+Name: puzzlebot_yolo
+Description: Description of puzzlebot_yolo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

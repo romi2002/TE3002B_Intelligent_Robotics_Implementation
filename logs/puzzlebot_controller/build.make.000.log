@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target puzzlebot_controller_controller_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/puzzlebot_controller_controller_node.dir/src/controller_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/puzzlebot/ws/devel/.private/puzzlebot_controller/lib/puzzlebot_controller/controller_node[0m
+[100%] Built target puzzlebot_controller_controller_node
