@@ -1,0 +1,88 @@
+[35m[1mScanning dependencies of target puzzlebot_controller_state_machine_node[0m
+[  4%] Built target puzzlebot_controller_controller_node
+[  7%] [32mBuilding CXX object CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveResult
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveGoal
+[  7%] Built target geometry_msgs_generate_messages_lisp
+[  7%] Built target actionlib_msgs_generate_messages_lisp
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveFeedback
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionGoal
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionResult
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveAction
+[  7%] Built target geometry_msgs_generate_messages_py
+[  7%] Built target actionlib_msgs_generate_messages_py
+[  7%] Built target actionlib_msgs_generate_messages_nodejs
+[  7%] Built target geometry_msgs_generate_messages_nodejs
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionFeedback
+[  7%] Built target geometry_msgs_generate_messages_cpp
+[  7%] Built target geometry_msgs_generate_messages_eus
+[  7%] Built target actionlib_msgs_generate_messages_eus
+[  7%] Built target actionlib_msgs_generate_messages_cpp
+[ 24%] Built target puzzlebot_controller_generate_messages_lisp
+[ 43%] Built target puzzlebot_controller_generate_messages_py
+[ 60%] Built target puzzlebot_controller_generate_messages_nodejs
+[ 80%] Built target puzzlebot_controller_generate_messages_eus
+[ 97%] Built target puzzlebot_controller_generate_messages_cpp
+[ 97%] Built target puzzlebot_controller_generate_messages
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::move_and_turn(double, double)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:135:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kactionlib::SimpleActionClient<puzzlebot_controller::MoveAction_<std::allocator<void> > >::sendGoal(puzzlebot_controller::MoveActionGoal&)[m[K’
+     ac_.sendGoal(action[01;31m[K)[m[K;
+                        [01;31m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:10:0[m[K:
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[Kcandidate: void actionlib::SimpleActionClient<ActionSpec>::sendGoal(const Goal&, actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback) [with ActionSpec = puzzlebot_controller::MoveAction_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::Goal = puzzlebot_controller::MoveGoal_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback = boost::function<void(const actionlib::SimpleClientGoalState&, const boost::shared_ptr<const puzzlebot_controller::MoveResult_<std::allocator<void> > >&)>; typename ActionSpec::_action_result_type::_result_type = puzzlebot_controller::MoveResult_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback = boost::function<void()>; actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback = boost::function<void(const boost::shared_ptr<const puzzlebot_controller::MoveFeedback_<std::allocator<void> > >&)>; typename ActionSpec::_action_feedback_type::_feedback_type = puzzlebot_controller::MoveFeedback_<std::allocator<void> >]
+ void [01;36m[KSimpleActionClient<ActionSpec>[m[K::sendGoal(const Goal & goal,
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpuzzlebot_controller::MoveActionGoal {aka puzzlebot_controller::MoveActionGoal_<std::allocator<void> >}[m[K’ to ‘[01m[Kconst Goal& {aka const puzzlebot_controller::MoveGoal_<std::allocator<void> >&}[m[K’
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:138:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuzzlebot_controller::MoveActionGoal_<std::allocator<void> >::_goal_type {aka struct puzzlebot_controller::MoveGoal_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kx[m[K’
+     action.goal.[01;31m[Kx[m[K = 0.0;
+                 [01;31m[K^[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:139:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuzzlebot_controller::MoveActionGoal_<std::allocator<void> >::_goal_type {aka struct puzzlebot_controller::MoveGoal_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kz[m[K’
+     action.goal.[01;31m[Kz[m[K = angle;
+                 [01;31m[K^[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:140:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kactionlib::SimpleActionClient<puzzlebot_controller::MoveAction_<std::allocator<void> > >::sendGoal(puzzlebot_controller::MoveActionGoal&)[m[K’
+     ac_.sendGoal(action[01;31m[K)[m[K;
+                        [01;31m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:10:0[m[K:
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[Kcandidate: void actionlib::SimpleActionClient<ActionSpec>::sendGoal(const Goal&, actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback) [with ActionSpec = puzzlebot_controller::MoveAction_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::Goal = puzzlebot_controller::MoveGoal_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback = boost::function<void(const actionlib::SimpleClientGoalState&, const boost::shared_ptr<const puzzlebot_controller::MoveResult_<std::allocator<void> > >&)>; typename ActionSpec::_action_result_type::_result_type = puzzlebot_controller::MoveResult_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback = boost::function<void()>; actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback = boost::function<void(const boost::shared_ptr<const puzzlebot_controller::MoveFeedback_<std::allocator<void> > >&)>; typename ActionSpec::_action_feedback_type::_feedback_type = puzzlebot_controller::MoveFeedback_<std::allocator<void> >]
+ void [01;36m[KSimpleActionClient<ActionSpec>[m[K::sendGoal(const Goal & goal,
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpuzzlebot_controller::MoveActionGoal {aka puzzlebot_controller::MoveActionGoal_<std::allocator<void> >}[m[K’ to ‘[01m[Kconst Goal& {aka const puzzlebot_controller::MoveGoal_<std::allocator<void> >&}[m[K’
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:143:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuzzlebot_controller::MoveActionGoal_<std::allocator<void> >::_goal_type {aka struct puzzlebot_controller::MoveGoal_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kx[m[K’
+     action.goal.[01;31m[Kx[m[K = dist;
+                 [01;31m[K^[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:144:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuzzlebot_controller::MoveActionGoal_<std::allocator<void> >::_goal_type {aka struct puzzlebot_controller::MoveGoal_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kz[m[K’
+     action.goal.[01;31m[Kz[m[K = 0;
+                 [01;31m[K^[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:145:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kactionlib::SimpleActionClient<puzzlebot_controller::MoveAction_<std::allocator<void> > >::sendGoal(puzzlebot_controller::MoveActionGoal&)[m[K’
+     ac_.sendGoal(action[01;31m[K)[m[K;
+                        [01;31m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:10:0[m[K:
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[Kcandidate: void actionlib::SimpleActionClient<ActionSpec>::sendGoal(const Goal&, actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback) [with ActionSpec = puzzlebot_controller::MoveAction_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::Goal = puzzlebot_controller::MoveGoal_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback = boost::function<void(const actionlib::SimpleClientGoalState&, const boost::shared_ptr<const puzzlebot_controller::MoveResult_<std::allocator<void> > >&)>; typename ActionSpec::_action_result_type::_result_type = puzzlebot_controller::MoveResult_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback = boost::function<void()>; actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback = boost::function<void(const boost::shared_ptr<const puzzlebot_controller::MoveFeedback_<std::allocator<void> > >&)>; typename ActionSpec::_action_feedback_type::_feedback_type = puzzlebot_controller::MoveFeedback_<std::allocator<void> >]
+ void [01;36m[KSimpleActionClient<ActionSpec>[m[K::sendGoal(const Goal & goal,
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpuzzlebot_controller::MoveActionGoal {aka puzzlebot_controller::MoveActionGoal_<std::allocator<void> >}[m[K’ to ‘[01m[Kconst Goal& {aka const puzzlebot_controller::MoveGoal_<std::allocator<void> >&}[m[K’
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K In member function ‘[01m[Kvoid StateMachine::forward(double)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:153:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuzzlebot_controller::MoveActionGoal_<std::allocator<void> >::_goal_type {aka struct puzzlebot_controller::MoveGoal_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kx[m[K’
+     action.goal.[01;31m[Kx[m[K = dist;
+                 [01;31m[K^[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:154:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuzzlebot_controller::MoveActionGoal_<std::allocator<void> >::_goal_type {aka struct puzzlebot_controller::MoveGoal_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kz[m[K’
+     action.goal.[01;31m[Kz[m[K = 0;
+                 [01;31m[K^[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:155:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kactionlib::SimpleActionClient<puzzlebot_controller::MoveAction_<std::allocator<void> > >::sendGoal(puzzlebot_controller::MoveActionGoal&)[m[K’
+     ac_.sendGoal(action[01;31m[K)[m[K;
+                        [01;31m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:10:0[m[K:
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[Kcandidate: void actionlib::SimpleActionClient<ActionSpec>::sendGoal(const Goal&, actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback, actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback) [with ActionSpec = puzzlebot_controller::MoveAction_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::Goal = puzzlebot_controller::MoveGoal_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleDoneCallback = boost::function<void(const actionlib::SimpleClientGoalState&, const boost::shared_ptr<const puzzlebot_controller::MoveResult_<std::allocator<void> > >&)>; typename ActionSpec::_action_result_type::_result_type = puzzlebot_controller::MoveResult_<std::allocator<void> >; actionlib::SimpleActionClient<ActionSpec>::SimpleActiveCallback = boost::function<void()>; actionlib::SimpleActionClient<ActionSpec>::SimpleFeedbackCallback = boost::function<void(const boost::shared_ptr<const puzzlebot_controller::MoveFeedback_<std::allocator<void> > >&)>; typename ActionSpec::_action_feedback_type::_feedback_type = puzzlebot_controller::MoveFeedback_<std::allocator<void> >]
+ void [01;36m[KSimpleActionClient<ActionSpec>[m[K::sendGoal(const Goal & goal,
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/client/simple_action_client.h:317:6:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpuzzlebot_controller::MoveActionGoal {aka puzzlebot_controller::MoveActionGoal_<std::allocator<void> >}[m[K’ to ‘[01m[Kconst Goal& {aka const puzzlebot_controller::MoveGoal_<std::allocator<void> >&}[m[K’
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:[m[K At global scope:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:181:2:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+ }[01;31m[K;[m[K
+  [01;31m[K^[m[K
+CMakeFiles/puzzlebot_controller_state_machine_node.dir/build.make:62: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o' failed
+CMakeFiles/Makefile2:592: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make[2]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/all] Error 2
+make: *** [all] Error 2

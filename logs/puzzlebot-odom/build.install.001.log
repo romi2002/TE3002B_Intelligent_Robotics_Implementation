@@ -1,0 +1,38 @@
+-- Using CATKIN_DEVEL_PREFIX: /home/puzzlebot/ws/devel/.private/puzzlebot-odom
+-- Using CMAKE_PREFIX_PATH: /home/puzzlebot/ws/install;/home/puzzlebot/catkin_ws/devel;/opt/ros/melodic
+-- This workspace overlays: /home/puzzlebot/ws/install;/home/puzzlebot/catkin_ws/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/puzzlebot/ws/build/puzzlebot-odom/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+-- Using Python nosetests: /usr/bin/nosetests
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/puzzlebot/ws/build/puzzlebot-odom
+[100%] Built target puzzlebot-odom_odometry_node
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/puzzlebot/ws/install/_setup_util.py
+-- Installing: /home/puzzlebot/ws/install/env.sh
+-- Installing: /home/puzzlebot/ws/install/setup.bash
+-- Installing: /home/puzzlebot/ws/install/local_setup.bash
+-- Installing: /home/puzzlebot/ws/install/setup.sh
+-- Installing: /home/puzzlebot/ws/install/local_setup.sh
+-- Installing: /home/puzzlebot/ws/install/setup.zsh
+-- Installing: /home/puzzlebot/ws/install/local_setup.zsh
+-- Installing: /home/puzzlebot/ws/install/.rosinstall
+-- Installing: /home/puzzlebot/ws/install/lib/pkgconfig/puzzlebot-odom.pc
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot-odom/cmake/puzzlebot-odomConfig.cmake
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot-odom/cmake/puzzlebot-odomConfig-version.cmake
+-- Up-to-date: /home/puzzlebot/ws/install/share/puzzlebot-odom/package.xml
+-- Installing: /home/puzzlebot/ws/install/lib/puzzlebot-odom/semaforo.py
+-- Up-to-date: /home/puzzlebot/ws/install/lib/puzzlebot-odom/puzzlebot-odom_odometry_node

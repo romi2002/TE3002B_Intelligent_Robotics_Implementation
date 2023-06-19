@@ -1,0 +1,8 @@
+make[2]: Warning: File '/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp' has modification time 2803 s in the future
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kpuzzlebot_controller/MoveAction.h: No such file or directory
+ #include [01;31m[K<puzzlebot_controller/MoveAction.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/all] Error 2
+make: *** [all] Error 2

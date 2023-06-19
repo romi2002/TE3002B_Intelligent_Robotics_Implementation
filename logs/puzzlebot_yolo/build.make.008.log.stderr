@@ -1,0 +1,102 @@
+/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/plugin/yololayer.h(57): warning: function "nvinfer1::IPluginV2Ext::configurePlugin(const nvinfer1::Dims *, int32_t, const nvinfer1::Dims *, int32_t, const nvinfer1::DataType *, const nvinfer1::DataType *, const __nv_bool *, const __nv_bool *, nvinfer1::PluginFormat, int32_t)" is hidden by "nvinfer1::YoloLayerPlugin::configurePlugin" -- virtual function override intended?
+
+/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/plugin/yololayer.h(57): warning: function "nvinfer1::IPluginV2Ext::configurePlugin(const nvinfer1::Dims *, int32_t, const nvinfer1::Dims *, int32_t, const nvinfer1::DataType *, const nvinfer1::DataType *, const bool *, const bool *, nvinfer1::PluginFormat, int32_t)" is hidden by "nvinfer1::YoloLayerPlugin::configurePlugin" -- virtual function override intended?
+
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:[m[K In function ‘[01m[Kvoid serialize_engine(unsigned int, bool&, float&, float&, std::__cxx11::string&, std::__cxx11::string&)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:79:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::ICudaEngine::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   engine->destroy([01;35m[K)[m[K;
+                   [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:6[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:1434:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:80:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IBuilder::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   builder->destroy([01;35m[K)[m[K;
+                    [01;35m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:6[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:7929:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:81:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IBuilderConfig::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   config->destroy([01;35m[K)[m[K;
+                   [01;35m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:6[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:7535:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:82:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IHostMemory::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   serialized_engine->destroy([01;35m[K)[m[K;
+                              [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:6[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:199:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:[m[K In function ‘[01m[Kvoid run_inference(cv::Mat&&)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:116:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpu_buffers[m[K’ was not declared in this scope
+   cuda_batch_preprocess(img_batch, [01;31m[Kgpu_buffers[m[K[0], kInputW, kInputH, stream);
+                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:116:36:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksetbuffer[m[K’
+   cuda_batch_preprocess(img_batch, [01;36m[Kgpu_buffers[m[K[0], kInputW, kInputH, stream);
+                                    [01;36m[K^~~~~~~~~~~[m[K
+                                    [32m[Ksetbuffer[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:116:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kstream[m[K’ was not declared in this scope
+   cuda_batch_preprocess(img_batch, gpu_buffers[0], kInputW, kInputH, [01;31m[Kstream[m[K);
+                                                                      [01;31m[K^~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:116:70:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kstrcat[m[K’
+   cuda_batch_preprocess(img_batch, gpu_buffers[0], kInputW, kInputH, [01;36m[Kstream[m[K);
+                                                                      [01;36m[K^~~~~~[m[K
+                                                                      [32m[Kstrcat[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:120:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontext[m[K’ was not declared in this scope
+   infer(*[01;31m[Kcontext[m[K, stream, (void**)gpu_buffers, cpu_output_buffer, kBatchSize);
+          [01;31m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:120:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kon_exit[m[K’
+   infer(*[01;36m[Kcontext[m[K, stream, (void**)gpu_buffers, cpu_output_buffer, kBatchSize);
+          [01;36m[K^~~~~~~[m[K
+          [32m[Kon_exit[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:120:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcpu_output_buffer[m[K’ was not declared in this scope
+   infer(*context, stream, (void**)gpu_buffers, [01;31m[Kcpu_output_buffer[m[K, kBatchSize);
+                                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:177:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IExecutionContext::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   context->destroy([01;35m[K)[m[K;
+                    [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:6[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:1888:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:178:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::ICudaEngine::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   engine->destroy([01;35m[K)[m[K;
+                   [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:6[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:1434:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:179:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IRuntime::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   runtime->destroy([01;35m[K)[m[K;
+                    [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:6[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:712:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/yolo_node.dir/src/yolo_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/yolo_node.dir/all] Error 2
+make: *** [all] Error 2

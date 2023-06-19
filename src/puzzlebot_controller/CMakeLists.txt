@@ -12,6 +12,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  genmsg
+  actionlib_msgs
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -62,17 +65,17 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+add_action_files(
+  FILES
+  Move.action
+)
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   geometry_msgs#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  actionlib_msgs
+  geometry_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -106,7 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
  INCLUDE_DIRS include
  LIBRARIES puzzlebot_controller
- CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs
+ CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs actionlib
  #DEPENDS system_lib
 )
 
@@ -136,11 +139,15 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(${PROJECT_NAME}_controller_node src/controller_node.cpp)
 
+add_executable(${PROJECT_NAME}_state_machine_node src/state_machine_node.cpp)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
 ## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
 set_target_properties(${PROJECT_NAME}_controller_node PROPERTIES OUTPUT_NAME controller_node PREFIX "")
+
+set_target_properties(${PROJECT_NAME}_state_machine_node PROPERTIES OUTPUT_NAME state_machine_node PREFIX "")
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -148,6 +155,10 @@ set_target_properties(${PROJECT_NAME}_controller_node PROPERTIES OUTPUT_NAME con
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_controller_node
+   ${catkin_LIBRARIES}
+)
+
+target_link_libraries(${PROJECT_NAME}_state_machine_node
    ${catkin_LIBRARIES}
 )
 
@@ -161,13 +172,19 @@ target_link_libraries(${PROJECT_NAME}_controller_node
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
+   scripts/line_follower.py
    scripts/target_generator.py
+   scripts/move_action_server.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
 install(TARGETS ${PROJECT_NAME}_controller_node
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(TARGETS ${PROJECT_NAME}_state_machine_node
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -187,11 +204,13 @@ install(TARGETS ${PROJECT_NAME}_controller_node
 # )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
+install(FILES
 #   # myfile1
 #   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
+  # launch/launch_puzzlebot.xml
+  launch/vision_test.xml
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 
 #############
 ## Testing ##

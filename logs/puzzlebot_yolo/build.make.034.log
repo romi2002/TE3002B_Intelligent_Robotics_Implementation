@@ -1,0 +1,114 @@
+[ 30%] Built target myplugins
+[35m[1mScanning dependencies of target yolo_node[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/yolo_node.dir/src/yolo_node.cpp.o[0m
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:[m[K In function ‘[01m[Kvoid serialize_engine(unsigned int, bool&, float&, float&, std::__cxx11::string&, std::__cxx11::string&)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:83:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::ICudaEngine::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   engine->destroy([01;35m[K)[m[K;
+                   [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:10[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:1434:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:84:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IBuilder::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   builder->destroy([01;35m[K)[m[K;
+                    [01;35m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:10[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:7929:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:85:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IBuilderConfig::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   config->destroy([01;35m[K)[m[K;
+                   [01;35m[K^[m[K
+In file included from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:10[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:7535:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:86:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IHostMemory::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   serialized_engine->destroy([01;35m[K)[m[K;
+                              [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:10[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:199:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:[m[K In function ‘[01m[Kstd::pair<cv::Mat, std::vector<Detection> > run_inference(nvinfer1::IExecutionContext*, cv::Mat&, float**, float*, CUstream_st*&)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:140:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<std::vector<Detection> >::emplace_back(<brace-enclosed initializer list>)[m[K’
+    res_batch.emplace_back({}[01;31m[K)[m[K;
+                             [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/vector:69:0[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/vector.tcc:95:7:[m[K [01;36m[Knote: [m[Kcandidate: void std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {}; _Tp = std::vector<Detection>; _Alloc = std::allocator<std::vector<Detection> >]
+       [01;36m[Kvector<_Tp, _Alloc>[m[K::
+       [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/vector.tcc:95:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:1[m[K:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:[m[K In lambda function:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 8 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:188:6:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+      [01;36m[KR[m[KOS_INFO("%s", detections[i].class_id);
+      [01;36m[K^[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:201:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IExecutionContext::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   context->destroy([01;35m[K)[m[K;
+                    [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:10[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:1888:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:202:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::ICudaEngine::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   engine->destroy([01;35m[K)[m[K;
+                   [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:10[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:1434:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:203:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid nvinfer1::IRuntime::destroy()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   runtime->destroy([01;35m[K)[m[K;
+                    [01;35m[K^[m[K
+In file included from [01m[K/usr/include/aarch64-linux-gnu/NvInfer.h:54:0[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/macros.h:4[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/libs/yolov5/src/logging.h:28[m[K,
+                 from [01m[K/home/puzzlebot/ws/src/puzzlebot_yolo/src/yolo_node.cpp:10[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/NvInferRuntime.h:712:25:[m[K [01;36m[Knote: [m[Kdeclared here
+     TRT_DEPRECATED void [01;36m[Kdestroy[m[K() noexcept
+                         [01;36m[K^~~~~~~[m[K
+CMakeFiles/yolo_node.dir/build.make:62: recipe for target 'CMakeFiles/yolo_node.dir/src/yolo_node.cpp.o' failed
+make[2]: *** [CMakeFiles/yolo_node.dir/src/yolo_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/yolo_node.dir/all] Error 2
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/yolo_node.dir/all' failed
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

@@ -1,0 +1,40 @@
+-- Using CATKIN_DEVEL_PREFIX: /home/puzzlebot/ws/devel/.private/puzzlebot_controller
+-- Using CMAKE_PREFIX_PATH: /home/puzzlebot/ws/install;/home/puzzlebot/catkin_ws/devel;/opt/ros/melodic
+-- This workspace overlays: /home/puzzlebot/ws/install;/home/puzzlebot/catkin_ws/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/puzzlebot/ws/build/puzzlebot_controller/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+-- Using Python nosetests: /usr/bin/nosetests
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Generating .msg files for action puzzlebot_controller/Move /home/puzzlebot/ws/src/puzzlebot_controller/action/Move.action
+-- puzzlebot_controller: 7 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/puzzlebot/ws/build/puzzlebot_controller
+[  4%] Built target puzzlebot_controller_controller_node
+[35m[1mScanning dependencies of target puzzlebot_controller_state_machine_node[0m
+[  7%] [32mBuilding CXX object CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o[0m
+[35m[1mScanning dependencies of target _puzzlebot_controller_generate_messages_check_deps_MoveActionFeedback[0m
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveActionFeedback
+[35m[1mScanning dependencies of target _puzzlebot_controller_generate_messages_check_deps_MoveResult[0m
+[01m[K/home/puzzlebot/ws/src/puzzlebot_controller/src/state_machine_node.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kinclude/MoveAction.h: No such file or directory
+ #include [01;31m[K"include/MoveAction.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+CMakeFiles/puzzlebot_controller_state_machine_node.dir/build.make:62: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o' failed
+CMakeFiles/Makefile2:592: recipe for target 'CMakeFiles/puzzlebot_controller_state_machine_node.dir/all' failed
+make[2]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/src/state_machine_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/puzzlebot_controller_state_machine_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[  7%] Built target _puzzlebot_controller_generate_messages_check_deps_MoveResult
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

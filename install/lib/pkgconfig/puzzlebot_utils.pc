@@ -1,0 +1,8 @@
+prefix=/home/puzzlebot/ws/install
+
+Name: puzzlebot_utils
+Description: Description of puzzlebot_utils
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpuzzlebot_utils
+Requires: cv_bridge sensor_msgs geometry_msgs roscpp rospy std_msgs gazebo_msgs

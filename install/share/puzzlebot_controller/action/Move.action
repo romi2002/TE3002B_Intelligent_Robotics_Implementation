@@ -1,0 +1,11 @@
+# Goal to move to, only x, z are used
+# Relative to starting position
+# If rot / translations are sent in the same goal,
+# translation will be applied first
+geometry_msgs/Point goal
+---
+
+---
+# Feedback
+float64 distance_to_target
+float64 angle_to_target

@@ -1,0 +1,5 @@
+_workspace_packages=( ${(Q)"${(z)$(<<\EO:_workspace_packages
+'cv_bridge' 'image_geometry' 'opencv_tests' 'puzzlebot-odom' 'puzzlebot_control' 'puzzlebot_controller' 'puzzlebot_gazebo' 'puzzlebot_utils' 'puzzlebot_world' 'puzzlebot_yolo' 'vision_opencv'
+EO:_workspace_packages
+)}"} )
+_workspace_cache_file_path='/home/puzzlebot/ws/.catkin_tools/cache'

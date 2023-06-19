@@ -1,0 +1,14 @@
+<launch>
+    <include file="$(find ros_deep_learning)/launch/video_source.ros1.launch"/>
+
+    <!-- <node pkg="puzzlebot-odom" type="puzzlebot-odom_odometry_node" name="puzzlebot_odometry"/> -->
+
+    <!-- <node pkg="puzzlebot_controller" type="move_action_server.py" name="puzzlebot_move_action"/> -->
+
+    <!-- <node pkg="puzzlebot_controller" type="line_follower.py" name="puzzlebot_line_follower"/> -->
+
+    <node pkg="puzzlebot-odom" type="semaforo.py" name="puzzlebot_semaforo_detect"/>
+
+    <!-- TODO include yolo node -->
+    <node pkg="puzzlebot_yolo" type="object_detect.py" name="object_detection_node"/>
+</launch>

@@ -1,0 +1,3 @@
+Symlinking /home/puzzlebot/ws/devel/lib/pkgconfig/opencv_tests.pc
+Symlinking /home/puzzlebot/ws/devel/share/opencv_tests/cmake/opencv_testsConfig.cmake
+Symlinking /home/puzzlebot/ws/devel/share/opencv_tests/cmake/opencv_testsConfig-version.cmake

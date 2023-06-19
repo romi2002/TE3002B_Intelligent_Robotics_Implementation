@@ -8,11 +8,13 @@ project(puzzlebot_utils)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  cv_bridge
+  sensor_msgs
   geometry_msgs
   roscpp
   rospy
   std_msgs
-  puzzlebot_sim
+  # puzzlebot_sim
 )
 
 ## System dependencies are found with CMake's conventions
@@ -107,7 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
  INCLUDE_DIRS include
  LIBRARIES puzzlebot_utils
- CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs gazebo_msgs
+ CATKIN_DEPENDS cv_bridge sensor_msgs geometry_msgs roscpp rospy std_msgs gazebo_msgs
  #DEPENDS system_lib
 )
 
@@ -117,11 +119,11 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-include_directories(
+##include_directories(
 # include
-  src
-  ${catkin_INCLUDE_DIRS}
-)
+##  src
+##  ${catkin_INCLUDE_DIRS}
+##)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
@@ -137,8 +139,8 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/puzzlebot_utils_node.cpp)
-add_executable(gazebo_characterization_node src/gazebo_characterization_node.cpp)
-add_executable(kinematic_characterization_node src/kinematic_characterization_node.cpp)
+##add_executable(gazebo_characterization_node src/gazebo_characterization_node.cpp)
+##add_executable(kinematic_characterization_node src/kinematic_characterization_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -151,13 +153,13 @@ add_executable(kinematic_characterization_node src/kinematic_characterization_no
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(gazebo_characterization_node
-   ${catkin_LIBRARIES}
-)
+##target_link_libraries(gazebo_characterization_node
+##   ${catkin_LIBRARIES}
+##)
 
-target_link_libraries(kinematic_characterization_node
-   ${catkin_LIBRARIES}
-)
+##target_link_libraries(kinematic_characterization_node
+##   ${catkin_LIBRARIES}
+##)
 
 #############
 ## Install ##
@@ -168,27 +170,28 @@ target_link_libraries(kinematic_characterization_node
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# catkin_install_python(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+catkin_install_python(PROGRAMS
+  scripts/cam_undistort.py
+  scripts/color_calibration.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
-install(TARGETS gazebo_characterization_node
-   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+##install(TARGETS gazebo_characterization_node
+  ## RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+##)
 
-install(TARGETS kinematic_characterization_node
-   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+##install(TARGETS kinematic_characterization_node
+  ## RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+##)
 
 ## Mark libraries for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_libraries.html
 # install(TARGETS ${PROJECT_NAME}
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
+  # RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 # )
 
 ## Mark cpp header files for installation
@@ -199,11 +202,12 @@ install(TARGETS kinematic_characterization_node
 # )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
+install(FILES
 #   # myfile1
 #   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
+  launch/video_source.launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 
 #############
 ## Testing ##
